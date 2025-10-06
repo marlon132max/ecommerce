@@ -1,0 +1,89 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+  
+    margin-bottom: 30px;
+}
+
+header a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* permite quebrar linha se a tela for pequena */
+}
+
+.card {
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    width: 300px; /* tamanho fixo dos cards */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;      /* imagem ocupa toda a largura do card */
+    height: 200px;    /* altura padronizada */
+    object-fit: cover;/* recorta imagem proporcionalmente */
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 90%; /* ocupa quase toda a tela no celular */
+    }
+}
+
+
+
+button {
+    background-color: #ff6600; /* laranja */
+    color: #ffffff;            /* texto branco */
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+button:hover {
+    background-color: #e65c00;  /* laranja mais escuro */
+    transform: scale(1.05);     /* leve aumento */
+}
+
+.preco {
+    font-weight: bold;
+    color: #ff6600;
+    margin-bottom: 10px;
+}
+
+.carrinho {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.carrinho:hover {
+    background-color: #e65c00;
+    transform: scale(1.05);
+}
